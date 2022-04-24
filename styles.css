@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #FFEA00;
+}
+div {
+  display: flex;
+  height: 250px;
+}
+#scoreboard {
+  height: 150px;
+}
+#scoreboard div {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+img {
+  width: 200px;
+  margin: 20px;
+}
+#rock:hover,
+#paper:hover, 
+#scissors:hover {
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+.hidden {
+  display: none;
+  opacity: 0;
+}
+.blink {
+  animation: blinker 1s linear infinite;
+}
+@keyframes blinker {
+  100% {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="/styles.css">
+  <title>Document</title>
+</head>
+<body>
+  
+  <div id="scoreboard">
+    <div>
+      <h1>Human</h1>
+      <h2 id="player-score">0</h2>
+    </div>
+    <div>
+      <h1>Machine</h1>
+      <h2 id="computer-score">0</h2>
+    </div>
+  </div>
+
+  <h2>Choose your weapon...</h2>
+  <div id='player-choice-display'>
+    <img id="rock" src="./images/rock.png"/>
+    <img id="paper" src="./images/paper.png"/>
+    <img id="scissors"src="./images/scissors.png"/>
+  </div>
+
+  <h2>Computer chooses...</h2>
+  <div id='computer-choice-display'>
+    <h1 id="placeholder">?</h1>
+    <img id="computer-display" class='hidden' src="" />
+  </div>
+  <script type="module" src="./index.js"></script>
+</body>
+</html>
